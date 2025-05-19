@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">TicketApp</string>
+
+    <string-array name="seat_classes">
+        <item>Economy</item>
+        <item>Business</item>
+        <item>First Class</item>
+    </string-array>
+
+    <string-array name="meal_preferences">  <!-- Keep Only One Definition -->
+        <item>None</item>
+        <item>Vegetarian</item>
+        <item>Non-Vegetarian</item>
+        <item>Vegan</item>
+    </string-array>
+
+    <string-array name="flight_locations">
+        <item>Delhi (DEL)</item>
+        <item>Mumbai (BOM)</item>
+        <item>Bangalore (BLR)</item>
+        <item>Chennai (MAA)</item>
+        <item>Kolkata (CCU)</item>
+        <item>Hyderabad (HYD)</item>
+        <item>Pune (PNQ)</item>
+        <item>Ahmedabad (AMD)</item>
+        <item>Goa (GOI)</item>
+        <item>Cochin (COK)</item>
+        <item>Jaipur (JAI)</item>
+        <item>Lucknow (LKO)</item>
+        <item>Chandigarh (IXC)</item>
+        <item>Bhopal (BHO)</item>
+        <item>Patna (PAT)</item>
+        <item>Visakhapatnam (VTZ)</item>
+        <item>Indore (IDR)</item>
+        <item>Guwahati (GAU)</item>
+    </string-array>
+
+    <string-array name="class_preferences">
+        <item>Economy</item>
+        <item>Business</item>
+        <item>First Class</item>
+    </string-array>
+
+    <string-array name="gender_options">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="seat_preferences">
+        <item>Window</item>
+        <item>Aisle</item>
+        <item>Middle</item>
+        <item>Upper Berth</item>
+        <item>Lower Berth</item>
+    </string-array>
+
+    <string-array name="train_stations">
+        <item>Delhi</item>
+        <item>Mumbai</item>
+        <item>Kolkata</item>
+        <item>Chennai</item>
+        <item>Bangalore</item>
+        <item>Hyderabad</item>
+        <item>Pune</item>
+        <item>Ahmedabad</item>
+        <item>Lucknow</item>
+        <item>Jaipur</item>
+    </string-array>
+
+    <string-array name="train_classes">
+        <item>General</item>
+        <item>Sleeper</item>
+        <item>AC 3 Tier</item>
+        <item>AC 2 Tier</item>
+        <item>AC First Class</item>
+    </string-array>
+</resources>

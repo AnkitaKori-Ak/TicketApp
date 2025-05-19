@@ -1,0 +1,17 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Outer Square with Green Border -->
+    <path
+        android:strokeWidth="2"
+        android:strokeColor="#088719"
+        android:pathData="M2,2h20v20h-20z"/>
+
+    <!-- Inner Circle (Green) -->
+    <path
+        android:fillColor="#088719"
+        android:pathData="M15,12c0,1.66 -1.34,3 -3,3s-3,-1.34 -3,-3 1.34,-3 3,-3 3,1.34 3,3z"/>
+</vector>

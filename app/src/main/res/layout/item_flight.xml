@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:id="@+id/textAirline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Airline Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Departure - Arrival"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/textPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="₹5000"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/textSeats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seats Available: 10"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/buttonSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECT FLIGHT"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/Cerulean_Blue"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

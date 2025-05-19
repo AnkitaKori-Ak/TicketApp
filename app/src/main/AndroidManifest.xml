@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- ✅ Storage Permissions (Only for Android 10 and below) -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" /> <!-- ✅ Internet Permission for WebView -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TicketApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".ReportMenuTrain"
+            android:exported="false" />
+        <!-- ✅ Report Activities -->
+        <activity
+            android:name=".Reports"
+            android:exported="false" />
+        <activity
+            android:name=".ReportsMenu"
+            android:exported="false" /> <!-- ✅ Login & Register Activities -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CustomerDetailsAirwaysActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SearchTicketAirwaysActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SelectTicketsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SeatSelectionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MealSelectionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ReviewTicketActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PassengerDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BookingConfirmationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TicketCancellationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BookingSelectionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TrainMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RailwaysCustomerDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SearchTicketRailwaysActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SelectTicketsRailwaysActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PassengerDetailsRailwaysActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PaymentTrainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BookingConfirmationRailwaysActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TicketCancellationRailwaysActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

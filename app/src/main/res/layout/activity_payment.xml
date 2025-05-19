@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LigntGray"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/solid_blue_background">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/world" />
+
+                <TextView
+                    android:id="@+id/booking_Preference"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fly smarter, book faster travel better!"
+                    android:textColor="@color/white"
+                    android:textSize="40dp"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.07"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.815" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:background="@drawable/solid_white_bg"
+            android:elevation="3dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="372dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/baseline_currency_rupee_24"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:text="PAYMENT DETAILS"
+                android:textColor="@color/Black_Pearl"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/solid_white_bg"
+            android:elevation="3dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewTotalAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Amount: ₹0"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#FF5722"
+                android:layout_marginBottom="10dp"/>
+            <!-- Payment Method Selection -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="Select Payment Method"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupPaymentMethod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:drawableRight="@drawable/baseline_credit_card_24"
+                    android:drawablePadding="20dp"
+                    android:text="Credit/Debit Card"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioUPI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:drawableRight="@drawable/upi_vector_icon"
+                    android:drawablePadding="20dp"
+                    android:text="UPI"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioNetBanking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:drawableRight="@drawable/baseline_account_balance_24"
+                    android:drawablePadding="20dp"
+                    android:text="Net Banking"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioWallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:drawableRight="@drawable/baseline_wallet_24"
+                    android:drawablePadding="20dp"
+                    android:text="Wallets"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <!-- Card Payment Fields -->
+            <LinearLayout
+                android:id="@+id/layoutCardDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingTop="10dp">
+
+                <EditText
+                    android:id="@+id/editTextCardNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Card Number"
+                    android:inputType="number"
+                    android:padding="10dp"/>
+
+                <EditText
+                    android:id="@+id/editTextExpiryDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Expiry Date (MM/YY)"
+                    android:inputType="text"
+                    android:padding="10dp"/>
+
+                <EditText
+                    android:id="@+id/editTextCVV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="CVV"
+                    android:inputType="numberPassword"
+                    android:padding="10dp"/>
+            </LinearLayout>
+
+            <!-- UPI Payment Field -->
+            <EditText
+                android:id="@+id/editTextUPI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter UPI ID"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:visibility="gone"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonPay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/pearl_button_background"
+                android:padding="10dp"
+                android:text="PROCEED TO PAYMENT"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

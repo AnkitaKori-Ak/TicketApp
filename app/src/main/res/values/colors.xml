@@ -1,0 +1,30 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="button_color">#007BFF</color>
+    <color name="neonGreen">#B3C8CF</color>
+    <color name="green">#4CAF50</color>
+    <!--  Green for selected seats  -->
+    <color name="red">#D32F2F</color>
+    <!--  Red for occupied seats  -->
+    <color name="gray">#BDBDBD</color>
+    <!--  Gray for available seats  -->
+    <color name="blue">#007BFF</color>
+    <color name="Black_Pearl">#001C30</color>
+    <color name="soft_Amber">#CDC2AE</color>
+    <color name="Red">#FF004D</color>
+    <color name="Yellow">#FFF024</color>
+    <color name="beige">#E5BA73</color>
+    <color name="Glade_Green">#597E52</color>
+    <color name="marron">#FF204E</color>
+    <color name="Double_Colonial_White">#E4CD9C</color>
+    <color name="Cerulean_Blue">#344CB7</color>
+    <color name="Turquoise_Blue">#6AD4DD</color>
+    <color name="Wewak">#E5989B</color>
+    <color name="Light_yellow">#e7e378</color>
+    <color name="Teal_color">#51c3bc</color>
+    <color name="Hot_pink">#fd6a58</color>
+    <color name="light_purple">#d1c4e9</color>
+    <color name="Voilate">#7b435b</color>
+    <color name="LigntGray">#F8F6F4</color>
+</resources>
